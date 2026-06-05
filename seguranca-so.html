@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segurança em Sistemas Operacionais</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<header>
+  <span class="header-label">// material de estudo</span>
+  <h1>Segurança em<br>Sistemas Operacionais</h1>
+  <p>Clique em um tópico para explorar seu conteúdo completo.</p>
+</header>
+
+<div class="grid-wrapper">
+
+  <div class="card" style="--card-accent:#00d4ff" onclick="openModal('m1')">
+    <div class="card-num">// 01</div>
+    <span class="card-icon">🔐</span>
+    <h2>Introdução</h2>
+    <p>A segurança em sistemas operacionais tornou-se essencial devido ao aumento da dependência da tecnologia e da internet.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#7c3aed" onclick="openModal('m2')">
+    <div class="card-num">// 02</div>
+    <span class="card-icon">⚡</span>
+    <h2>Avanços Tecnológicos e Segurança</h2>
+    <p>O crescimento da capacidade de processamento trouxe benefícios, mas também aumentou os riscos de ataques cibernéticos.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#10b981" onclick="openModal('m3')">
+    <div class="card-num">// 03</div>
+    <span class="card-icon">🔒</span>
+    <h2>Criptografia</h2>
+    <p>Técnica que transforma informações legíveis em dados codificados, fundamental para a proteção das informações digitais.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#f59e0b" onclick="openModal('m4')">
+    <div class="card-num">// 04</div>
+    <span class="card-icon">✍️</span>
+    <h2>Assinatura Digital</h2>
+    <p>Mecanismo que comprova a autenticidade e a integridade de documentos eletrônicos usando recursos criptográficos.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#ef4444" onclick="openModal('m5')">
+    <div class="card-num">// 05</div>
+    <span class="card-icon">🛡️</span>
+    <h2>Firewalls e Controle de Acesso</h2>
+    <p>Barreiras de proteção entre redes que monitoram e controlam o tráfego de dados, bloqueando acessos indevidos.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#ec4899" onclick="openModal('m6')">
+    <div class="card-num">// 06</div>
+    <span class="card-icon">⚠️</span>
+    <h2>Ataques e Prevenção</h2>
+    <p>Vírus, ransomware, phishing e DDoS estão entre os ataques mais comuns. Conheça as técnicas de prevenção.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#06b6d4" onclick="openModal('m7')">
+    <div class="card-num">// 07</div>
+    <span class="card-icon">🌐</span>
+    <h2>Sistemas Distribuídos</h2>
+    <p>Vários computadores conectados que trabalham em conjunto, oferecendo maior desempenho e disponibilidade dos serviços.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#8b5cf6" onclick="openModal('m8')">
+    <div class="card-num">// 08</div>
+    <span class="card-icon">☁️</span>
+    <h2>Computação em Nuvem</h2>
+    <p>Recursos computacionais via internet com redução de custos, flexibilidade e escalabilidade. AWS, GCP e Azure.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+  <div class="card" style="--card-accent:#34d399" onclick="openModal('m9')">
+    <div class="card-num">// 09</div>
+    <span class="card-icon">📋</span>
+    <h2>Considerações Finais</h2>
+    <p>A segurança digital é indispensável. Investir em segurança da informação tornou-se uma necessidade estratégica.</p>
+    <div class="card-footer">Ler mais <span>→</span></div>
+  </div>
+
+</div>
+
+<!-- MODALS -->
+
+<div class="modal-overlay" id="m1" onclick="closeOnOverlay(event, 'm1')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#00d4ff"></div>
+      <button class="modal-close" onclick="closeModal('m1')">✕</button>
+      <div class="modal-num" style="color:#00d4ff">// 01 — Introdução</div>
+      <span class="modal-icon">🔐</span>
+      <h2>Introdução</h2>
+    </div>
+    <div class="modal-body">
+      <p>A segurança em sistemas operacionais tornou-se essencial devido ao aumento da dependência da tecnologia e da internet. Atualmente, empresas e usuários precisam proteger seus dados contra acessos não autorizados, vazamentos e ataques virtuais. A unidade aborda conceitos como criptografia, assinatura digital, firewalls, sistemas distribuídos e computação em nuvem.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m2" onclick="closeOnOverlay(event, 'm2')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#7c3aed"></div>
+      <button class="modal-close" onclick="closeModal('m2')">✕</button>
+      <div class="modal-num" style="color:#7c3aed">// 02 — Avanços Tecnológicos</div>
+      <span class="modal-icon">⚡</span>
+      <h2>Avanços Tecnológicos e Segurança Computacional</h2>
+    </div>
+    <div class="modal-body">
+      <p>O crescimento da capacidade de processamento, armazenamento e conectividade trouxe inúmeros benefícios, mas também aumentou os riscos de ataques cibernéticos. A segurança computacional busca proteger informações, equipamentos e serviços, garantindo confidencialidade, integridade, disponibilidade e confiabilidade dos dados.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m3" onclick="closeOnOverlay(event, 'm3')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#10b981"></div>
+      <button class="modal-close" onclick="closeModal('m3')">✕</button>
+      <div class="modal-num" style="color:#10b981">// 03 — Criptografia</div>
+      <span class="modal-icon">🔒</span>
+      <h2>Criptografia</h2>
+    </div>
+    <div class="modal-body">
+      <p>A criptografia é uma técnica que transforma informações legíveis em dados codificados, permitindo que apenas pessoas autorizadas tenham acesso ao conteúdo. Atualmente é utilizada em aplicativos de mensagens, transações bancárias, sites seguros e sistemas corporativos, sendo fundamental para a proteção das informações digitais.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m4" onclick="closeOnOverlay(event, 'm4')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#f59e0b"></div>
+      <button class="modal-close" onclick="closeModal('m4')">✕</button>
+      <div class="modal-num" style="color:#f59e0b">// 04 — Assinatura Digital</div>
+      <span class="modal-icon">✍️</span>
+      <h2>Assinatura Digital</h2>
+    </div>
+    <div class="modal-body">
+      <p>A assinatura digital é um mecanismo que comprova a autenticidade e a integridade de documentos eletrônicos. Diferentemente de uma assinatura comum, ela utiliza recursos criptográficos para garantir que o documento não foi alterado após a assinatura e para identificar seu autor de forma confiável.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m5" onclick="closeOnOverlay(event, 'm5')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#ef4444"></div>
+      <button class="modal-close" onclick="closeModal('m5')">✕</button>
+      <div class="modal-num" style="color:#ef4444">// 05 — Firewalls</div>
+      <span class="modal-icon">🛡️</span>
+      <h2>Firewalls e Controle de Acesso</h2>
+    </div>
+    <div class="modal-body">
+      <p>Os firewalls funcionam como barreiras de proteção entre redes, monitorando e controlando o tráfego de dados. Eles ajudam a bloquear acessos indevidos e ataques externos. Atualmente, os firewalls são utilizados em computadores pessoais, servidores, roteadores e ambientes corporativos para reforçar a segurança da rede.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m6" onclick="closeOnOverlay(event, 'm6')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#ec4899"></div>
+      <button class="modal-close" onclick="closeModal('m6')">✕</button>
+      <div class="modal-num" style="color:#ec4899">// 06 — Ataques e Prevenção</div>
+      <span class="modal-icon">⚠️</span>
+      <h2>Principais Ataques à Segurança e Técnicas de Prevenção</h2>
+    </div>
+    <div class="modal-body">
+      <p>Entre os ataques mais comuns estão vírus, worms, trojans, ransomware, phishing e ataques de negação de serviço (DDoS). Para prevenção, recomenda-se manter sistemas atualizados, utilizar antivírus, realizar backups frequentes, empregar autenticação multifator e adotar políticas de controle de acesso. O material também menciona as chamadas "máquinas zumbis", utilizadas em ataques coordenados.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m7" onclick="closeOnOverlay(event, 'm7')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#06b6d4"></div>
+      <button class="modal-close" onclick="closeModal('m7')">✕</button>
+      <div class="modal-num" style="color:#06b6d4">// 07 — Sistemas Distribuídos</div>
+      <span class="modal-icon">🌐</span>
+      <h2>Sistemas Distribuídos</h2>
+    </div>
+    <div class="modal-body">
+      <p>Os sistemas distribuídos consistem em vários computadores conectados que trabalham em conjunto como se fossem um único sistema. Esse modelo oferece maior desempenho, escalabilidade e disponibilidade dos serviços. Caso uma máquina falhe, outras podem continuar atendendo às solicitações dos usuários.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m8" onclick="closeOnOverlay(event, 'm8')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#8b5cf6"></div>
+      <button class="modal-close" onclick="closeModal('m8')">✕</button>
+      <div class="modal-num" style="color:#8b5cf6">// 08 — Computação em Nuvem</div>
+      <span class="modal-icon">☁️</span>
+      <h2>Computação em Nuvem</h2>
+    </div>
+    <div class="modal-body">
+      <p>A computação em nuvem permite utilizar recursos computacionais pela internet sem a necessidade de possuir servidores próprios. Entre as vantagens estão a redução de custos, a flexibilidade e a escalabilidade. Atualmente, os principais provedores são Amazon Web Services, Google Cloud Platform e Microsoft Azure.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m9" onclick="closeOnOverlay(event, 'm9')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-accent-bar" style="background:#34d399"></div>
+      <button class="modal-close" onclick="closeModal('m9')">✕</button>
+      <div class="modal-num" style="color:#34d399">// 09 — Considerações Finais</div>
+      <span class="modal-icon">📋</span>
+      <h2>Considerações Finais</h2>
+    </div>
+    <div class="modal-body">
+      <p>A segurança digital é indispensável no mundo moderno. O uso de criptografia, assinaturas digitais, firewalls, sistemas distribuídos e computação em nuvem contribui para proteger informações e garantir a continuidade dos serviços. Com a crescente digitalização das atividades pessoais e empresariais, investir em segurança da informação tornou-se uma necessidade estratégica.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Segurança em Sistemas Operacionais &mdash; Material de Estudo
+</footer>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeOnOverlay(e, id) {
+    if (e.target === e.currentTarget) closeModal(id);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.active')
+        .forEach(el => el.classList.remove('active'));
+      document.body.style.overflow = '';
+    }
+  });
+</script>
+</body>
+</html>
